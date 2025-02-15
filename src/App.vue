@@ -1,24 +1,12 @@
 <template>
-    <h1>Hola Mundo</h1>
-    <p>{{ contador }}</p>
-    <button @click="incrementar">Incrementar</button>
-    <button @click="decrementar">Decrementar</button>
-  </template>
+    <Contador></Contador>
+</template>
   
-  <script setup>
-    import { ref } from 'vue';
-    const contador = ref(0);
-    const incrementar = () => {
-      contador.value++;
-    }
-    const decrementar = () => {
-      contador.value--;
-    }
-  </script>
-  
-  <style scoped>
-  p {
-    color: red;
-  }
-  </style>
+<script setup>
+    import Contador from './components/Contador.vue';
+</script>
+
+<style scoped>
+
+</style>
   
